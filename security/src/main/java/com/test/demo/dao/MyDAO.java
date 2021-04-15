@@ -8,4 +8,6 @@ import com.test.demo.model.User;
 @Repository
 public interface MyDAO extends JpaRepository<User, Integer> {
 
+	User findbyUserName(String username);
+
 }
