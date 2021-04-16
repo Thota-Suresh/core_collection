@@ -6,8 +6,10 @@ import org.springframework.stereotype.Repository;
 import com.test.demo.model.User;
 
 @Repository
-public interface MyDAO extends JpaRepository<User, Integer> {
+public interface MyDAO extends JpaRepository<User, String> {
 
-	User findbyUserName(String username);
+	 User findUserByUsername(String username);
 
 }
+
+ 
