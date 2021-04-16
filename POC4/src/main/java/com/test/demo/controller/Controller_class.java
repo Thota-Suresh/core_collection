@@ -32,10 +32,7 @@ public class Controller_class {
 	public List<Job> getlanguage(@PathVariable("language") String language){
 		return jdao.findByLanguage(language);
 	}
-	@GetMapping("/job/{payRate}/{payRate1}")
-	public List<Job> getpayRate(@PathVariable("payRate") Integer payRate,@PathVariable("payRate1")  Integer payRate1){
-		return jdao.findByPayRate(payRate, payRate1);
-	}
+	
 	
 	@GetMapping("/job/skills/{skills}")
 	public List<Job> getskills(@PathVariable("skills") String  skills){

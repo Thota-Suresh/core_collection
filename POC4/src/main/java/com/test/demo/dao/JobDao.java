@@ -19,5 +19,5 @@ public interface JobDao   extends JpaRepository<Job, Integer> {
 	 List<Job> findByCountry(String country);
 	 List<Job> findBySkills(String  skills);
 	 List<Job> findByLanguage(String  language);
-	 List<Job> findByPayRate(Integer payRate,Integer payRate1);
+	
 }
