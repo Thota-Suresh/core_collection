@@ -13,10 +13,12 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @EnableWebSecurity
 @Configuration 
 public class ApplicationConfig extends WebSecurityConfigurerAdapter { 
-   @Bean 
-   public PasswordEncoder passwordEncoder() { 
-      return new BCryptPasswordEncoder(); 
-   } 	@Bean
+//   @Bean 
+//   public PasswordEncoder passwordEncoder() { 
+//      return new BCryptPasswordEncoder(); 
+//   }
+	
+	@Bean
 	public AuthenticationProvider authProvider() {
 		DaoAuthenticationProvider provider = new DaoAuthenticationProvider();
 		provider.setUserDetailsService(userDetailsService());
