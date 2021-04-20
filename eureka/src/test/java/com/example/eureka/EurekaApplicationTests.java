@@ -1,10 +1,10 @@
-package com.poc.demo;
+package com.example.eureka;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class StreamApi1ApplicationTests {
+class EurekaApplicationTests {
 
 	@Test
 	void contextLoads() {
